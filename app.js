@@ -24,7 +24,7 @@ app.use(cookieParser(""));
 
 
 app.use(cors({
-    origin: 'https://NamanKumar188.github.io',
+    origin: ' https://namankumar188.github.io/full-stack-e-com/',
     credentials: true
 }));
 
