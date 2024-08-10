@@ -9,7 +9,7 @@ import Buynow from './Components/buynow/Buynow';
 import './App.css';
 import { useEffect, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
-import { Router,Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; // BrowserRouter aliasing
 
 
 function App() {
@@ -30,23 +30,23 @@ function App() {
             <Navbaar />
             <Newnav />
             <Router basename='/full-stack-e-com'>
-            <Switch>
-              <Route exact path="/">
-                <Maincomp />
-              </Route>
-              <Route exact path="/signup">
-                <Signup />
-              </Route>
-              <Route exact path="/login">
-                <Sign_in />
-              </Route>
-              <Route exact path="/getproductsone/:id">
-                <Cart />
-              </Route>
-              <Route exact path="/buynow">
-                <Buynow />
-              </Route>
-            </Switch>
+              <Switch>
+                <Route exact path="/">
+                  <Maincomp />
+                </Route>
+                <Route exact path="/signup">
+                  <Signup />
+                </Route>
+                <Route exact path="/login">
+                  <Sign_in />
+                </Route>
+                <Route exact path="/getproductsone/:id">
+                  <Cart />
+                </Route>
+                <Route exact path="/buynow">
+                  <Buynow />
+                </Route>
+              </Switch> 
             </Router>
             <Footer />
           </>

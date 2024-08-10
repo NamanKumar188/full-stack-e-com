@@ -28,7 +28,7 @@ router.post("/register", async (req, res) => {
     const { fname, email, mobile, password, cpassword } = req.body;
 
     if (!fname || !email || !mobile || !password || !cpassword) {
-        res.status(422).json({ error: "fill the all details" });
+        res.status(422).json({ error: "filll the all details" });
         console.log("bhai nathi present badhi details");
     };
 
@@ -163,7 +163,7 @@ router.get("/cartdetails", authenicate, async (req, res) => {
 
 
 // get user is login or not
-router.get("/validuser", authenicate, async (req, res) => { 
+router.get("/validuser", authenicate, async (req, res) => {
     try {
         const validuserone = await User.findOne({ _id: req.userID });
         console.log(validuserone + "user hain home k header main pr");
