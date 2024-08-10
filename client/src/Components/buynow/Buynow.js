@@ -12,7 +12,7 @@ const Buynow = () => {
     // console.log(cartdata.length);
 
     const getdatabuy = async () => {
-        const res = await fetch("/cartdetails", {
+        const res = await fetch("https://full-stack-e-com-1.onrender.com/cartdetails", {
             method: "GET",
             headers: {
                 Accept:"application/json",
