@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/NamanKumar188/full-stack-ecom/static/css/main.441dc7b7.css",
+    "main.js": "/NamanKumar188/full-stack-ecom/static/js/main.de6e3b39.js",
+    "static/media/revicons.eot": "/NamanKumar188/full-stack-ecom/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/NamanKumar188/full-stack-ecom/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/NamanKumar188/full-stack-ecom/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/NamanKumar188/full-stack-ecom/index.html",
+    "main.441dc7b7.css.map": "/NamanKumar188/full-stack-ecom/static/css/main.441dc7b7.css.map",
+    "main.de6e3b39.js.map": "/NamanKumar188/full-stack-ecom/static/js/main.de6e3b39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.441dc7b7.css",
+    "static/js/main.de6e3b39.js"
+  ]
+}
