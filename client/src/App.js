@@ -9,7 +9,7 @@ import Buynow from './Components/buynow/Buynow';
 import './App.css';
 import { useEffect, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
-import { Switch, Route } from "react-router-dom";
+import { Router,Switch, Route } from "react-router-dom";
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
           <>
             <Navbaar />
             <Newnav />
+            <Router basename='/full-stack-e-com'>
             <Switch>
               <Route exact path="/">
                 <Maincomp />
@@ -46,6 +47,7 @@ function App() {
                 <Buynow />
               </Route>
             </Switch>
+            </Router>
             <Footer />
           </>
         ) : (

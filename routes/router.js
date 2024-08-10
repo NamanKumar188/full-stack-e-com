@@ -28,7 +28,7 @@ router.post("/register", async (req, res) => {
     const { fname, email, mobile, password, cpassword } = req.body;
 
     if (!fname || !email || !mobile || !password || !cpassword) {
-        res.status(422).json({ error: "filll the all details" });
+        res.status(422).json({ error: "fill the all details" });
         console.log("bhai nathi present badhi details");
     };
 
