@@ -22,12 +22,21 @@ app.use(cookieParser(""));
 //     credentials: true 
 // }));
 
+const allowedOrigins = [
+    'https://NamanKumar188.github.io/full-stack-e-com',
+    'https://namankumar188.github.io',
+    'https://NamanKumar188.github.io/full-stack-e-com-client',
+    process.env.CLIENT_URL || 'http://localhost:3000'
+];
 
 app.use(cors({
-    origin: ' https://NamanKumar188.github.io/full-stack-e-com/',
-    origin: ' https://namankumar188.github.io',
-    origin: ' https://NamanKumar188.github.io/full-stack-e-com-client/',
-    origin: process.env.CLIENT_URL || 'http://localhost:3000', 
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true
 }));
 
