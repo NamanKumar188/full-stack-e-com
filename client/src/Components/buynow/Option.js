@@ -12,7 +12,7 @@ const Option = ({ deletedata, get }) => {
 
     const removedata = async (id) => {
         try {
-            const res = await fetch(`https://full-stack-e-com-5.onrender.com/remove/${id}`, {
+            const res = await fetch(`https://full-stack-e-com-6.onrender.com/remove/${id}`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",

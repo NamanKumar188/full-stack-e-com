@@ -1,7 +1,7 @@
 
 export const getProducts = ()=> async(dispatch)=>{
     try {
-        const data = await fetch("https://full-stack-e-com-5.onrender.com/getproducts",{
+        const data = await fetch("https://full-stack-e-com-6.onrender.com/getproducts",{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json"

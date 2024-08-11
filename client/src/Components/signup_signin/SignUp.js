@@ -34,7 +34,7 @@ const Signup = () => {
 
         const { fname, email, mobile, password, cpassword } = udata;
         try {
-            const res = await fetch("https://full-stack-e-com-5.onrender.com/register", {
+            const res = await fetch("https://full-stack-e-com-6.onrender.com/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

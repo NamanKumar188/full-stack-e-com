@@ -34,7 +34,7 @@ const Sign_in = () => {
         const { email, password } = logdata;
         // console.log(email);
         try {
-            const res = await fetch("https://full-stack-e-com-5.onrender.com/login", {
+            const res = await fetch("https://full-stack-e-com-6.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
