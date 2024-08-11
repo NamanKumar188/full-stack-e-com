@@ -40,7 +40,7 @@ const allowedOrigins = [
 // }));
 
 app.use(cors({
-    origin: 'https://full-stack-e-com-6.onrender.com',
+    origin: 'https://namankumar188.github.io',
     credentials: true
 }));
 
