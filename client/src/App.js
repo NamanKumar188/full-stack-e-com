@@ -29,7 +29,7 @@ function App() {
           <>
             <Navbaar />
             <Newnav />
-            <Router basename='/full-stack-e-com'>
+            <Router basename='/full-stack-e-com-client'>
               <Switch>
                 <Route exact path="/">
                   <Maincomp />
