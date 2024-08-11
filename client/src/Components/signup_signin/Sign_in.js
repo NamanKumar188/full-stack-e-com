@@ -47,7 +47,7 @@ const Sign_in = () => {
 
             const data = await res.json();
             console.log("data : ",data);
-            console.log(document.cookie);
+            console.log("cookie : ",document.cookie);
 
             if (res.status === 400 || !data) {
                 console.log("invalid details");

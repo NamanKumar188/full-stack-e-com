@@ -92,7 +92,7 @@ router.post("/login", async (req, res) => {
                     domain: "namankumar188.github.io", 
                     path: "/",
                     secure: true, 
-                    httpOnly: true,
+                    // httpOnly: true,
                     sameSite: 'None',
                     maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
                 });
