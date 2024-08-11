@@ -89,7 +89,7 @@ router.post("/login", async (req, res) => {
                 console.log("Generated token:", token); 
                    
                 res.cookie("eccomerce", token, {
-                    expires: new Date(Date.now() + 2589000), // Cookie expires after 30 days
+                    maxAge: 30 * 24 * 60 * 60 * 1000, // Cookie expires after 30 days
                     httpOnly: false, // Allows client-side JavaScript to access the cookie
                     secure: false, // Cookie can be sent over HTTP or HTTPS
                     sameSite: 'lax' // Allows cookie to be sent with same-site requests and some cross-site requests
