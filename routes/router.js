@@ -94,7 +94,7 @@ router.post("/login", async (req, res) => {
                     secure: false, // Cookie can be sent over HTTP or HTTPS
                     sameSite: 'lax' // Allows cookie to be sent with same-site requests and some cross-site requests
                 });
-                console.log("cookies start here :",res.cookie(),"cookies ended");
+                console.log("cookies start here :",res.getHeader('Set-Cookie'),"cookies ended");
                 return res.status(201).json(userlogin);
             }
         } else {
