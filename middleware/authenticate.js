@@ -8,15 +8,21 @@ const authenicate = async (req, res, next) => {
         const token = req.cookies.eccomerce;
 
         if (!token) {
+            console.log("No token provided");
             return res.status(401).send("No token provided");
         }
         
+        console.log("Token received:", token);
+
         const verifyToken = jwt.verify(token, keysecret);
+
+        console.log("Token verified:", verifyToken);
 
         const rootUser = await User.findOne({ _id: verifyToken._id, "tokens.token": token });
 
         if (!rootUser) {
-            return res.status(401).send(" User not found");
+            console.log("User not found");
+            return res.status(401).send("User not found");
         }
 
         req.token = token;
@@ -26,8 +32,9 @@ const authenicate = async (req, res, next) => {
         next();
     } catch (error) {
         console.error("Authentication error:", error.message);
-        res.status(401).send(" Token verification failed");
+        res.status(401).send("Token verification failed");
     }
 };
+
 
 module.exports = authenicate;

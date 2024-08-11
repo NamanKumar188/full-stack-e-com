@@ -13,7 +13,7 @@ const Empty = () => {
                         <h1>Your Amazon Basket is empty</h1>
                         <p>See recommendations</p>
                     </div>
-                    <NavLink className="empty_btn" to="/">Add Your Iteams</NavLink>
+                    <NavLink className="empty_btn" to="/">Add Your Items</NavLink>
                 </div>
             </div>
         </div>
