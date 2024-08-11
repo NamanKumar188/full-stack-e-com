@@ -23,9 +23,8 @@ app.use(cookieParser(""));
 // }));
 
 const allowedOrigins = [
-    'https://NamanKumar188.github.io/full-stack-e-com',
     'https://namankumar188.github.io',
-    'https://NamanKumar188.github.io/full-stack-e-com-client',
+    'https://full-stack-e-com-6.onrender.com',
     process.env.CLIENT_URL || 'http://localhost:3000'
 ];
 
