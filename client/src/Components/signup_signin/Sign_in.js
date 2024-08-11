@@ -41,7 +41,10 @@ const Sign_in = () => {
                 },
                 body: JSON.stringify({
                     email, password
-                })
+                }),
+                
+            withCredentials:true,
+            credentials: "include"
             });
 
 

@@ -64,6 +64,7 @@ const Navbaar = () => {
                 Accept: "application/json",
                 "Content-Type": "application/json"
             },
+            withCredentials:true,
             credentials: "include"
         });
 
@@ -87,6 +88,7 @@ const Navbaar = () => {
                 Accept: "application/json",
                 "Content-Type": "application/json"
             },
+            withCredentials:true,
             credentials: "include"
         });
 

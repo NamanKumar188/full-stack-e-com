@@ -5,7 +5,9 @@ export const getProducts = ()=> async(dispatch)=>{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json"
-                }
+                },
+            withCredentials:true,
+            credentials: "include"
         });
 
         const res = await data.json();

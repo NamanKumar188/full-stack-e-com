@@ -41,7 +41,10 @@ const Signup = () => {
                 },
                 body: JSON.stringify({
                     fname, email, mobile, password, cpassword
-                })
+                }),
+                
+            withCredentials:true,
+            credentials: "include"
             });
 
             const data = await res.json();

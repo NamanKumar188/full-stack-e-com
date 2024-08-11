@@ -39,10 +39,11 @@ const allowedOrigins = [
 //     credentials: true
 // }));
 
-app.use(cors({
-    origin: 'https://namankumar188.github.io',
-    credentials: true
-}));
+// app.use(cors({
+//     origin: 'https://namankumar188.github.io',
+//     credentials: true
+// }));
+app.use(cors({ origin: true, credentials: true }));
 
 
 
