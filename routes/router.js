@@ -89,7 +89,7 @@ router.post("/login", async (req, res) => {
                 console.log("Generated token:", token); 
                    
                 res.cookie("eccomerce", token, {
-                    domain: "namankumar188.github.io", 
+                    // domain: "namankumar188.github.io", 
                     path: "/",
                     secure: true, 
                     // httpOnly: true,
