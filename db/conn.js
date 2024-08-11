@@ -9,7 +9,6 @@
 
 const mongoose = require('mongoose');
 
-// Temporarily hardcode the MongoDB URI
 const DB = 'mongodb+srv://namankumar:naman1234@atlascluster.sw6thba.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster';
 
 mongoose.connect(DB, {
