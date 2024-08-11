@@ -94,7 +94,7 @@ router.post("/login", async (req, res) => {
                     secure: false, // Cookie can be sent over HTTP or HTTPS
                     sameSite: 'lax' // Allows cookie to be sent with same-site requests and some cross-site requests
                 });
-                
+                console.log(res.cookie());
                 return res.status(201).json(userlogin);
             }
         } else {
@@ -113,10 +113,10 @@ router.get("/getproductsone/:id", async (req, res) => {
 
     try {
         const { id } = req.params;
-        console.log(id);
+        // console.log(id);
 
         const individual = await products.findOne({ id: id });
-        console.log(individual + "ind mila hai");
+        // console.log(individual + "ind mila hai");
 
         res.status(201).json(individual);
     } catch (error) {
@@ -129,13 +129,13 @@ router.get("/getproductsone/:id", async (req, res) => {
 router.post("/addcart/:id", authenicate, async (req, res) => {
 
     try {
-        console.log("perfect 6");
+        // console.log("perfect 6");
         const { id } = req.params;
         const cart = await products.findOne({ id: id });
-        console.log(cart + "cart milta hain");
+        // console.log(cart + "cart milta hain");
 
         const Usercontact = await User.findOne({ _id: req.userID });
-        console.log(Usercontact + "user milta hain");
+        // console.log(Usercontact + "user milta hain");
 
 
         if (Usercontact) {
@@ -213,7 +213,7 @@ router.get("/remove/:id", authenicate, async (req, res) => {
 
         req.rootUser.save();
         res.status(201).json(req.rootUser);
-        console.log("iteam remove");
+        console.log("item remove");
 
     } catch (error) {
         console.log(error + "jwt provide then remove");
