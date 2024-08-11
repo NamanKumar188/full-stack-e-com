@@ -40,7 +40,7 @@ const allowedOrigins = [
 // }));
 
 app.use(cors({
-    origin: '*',
+    origin: 'https://full-stack-e-com-6.onrender.com',
     credentials: true
 }));
 
